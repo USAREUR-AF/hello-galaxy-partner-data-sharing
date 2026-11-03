@@ -33,7 +33,7 @@ hz_say  ""
 hz_say  "LANES     release is the decision, and it is about DATA. The partner's"
 hz_say  "          reach and the partner's data are separate grants. Withholding"
 hz_say  "          is the default state and costs nothing."
-hz_note "The rest of this run is evidence for the second column, from your goatnet."
+hz_note "The rest of this run is evidence for the second column, from the goatnet you are using."
 
 hz_step "2. What can this identity read, and WHY?"
 hz_cmd  "goat access who $ANCHOR"

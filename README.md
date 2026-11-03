@@ -103,9 +103,11 @@ env you chose (the active context by default; `--env <context>` picks another).
 
 **What needs a goatnet.** Every pattern runs against a goatnet: the drivers
 derive your anchor from your context's certificate and ask the goatnet's ACL
-for decisions. If you don't have a goatnet, the goatlite tutorial stands one up
-on a single box: [`docs/tutorials/00-goatlite.md`](https://github.com/usareur-af/goatcore/blob/main/docs/tutorials/00-goatlite.md)
-in goatcore. Landing a `release/` write, and seeing a partner receive it,
+for decisions. Any appropriate goatnet you have access to works:
+EFDI, the shared sandbox goatnet that partners are onboarded to (if you are onboarded to it); <!-- oss-allow: operator-approved public example goatnet -->
+a goatlite you stand up yourself on a single box (goatcore's
+[`docs/tutorials/00-goatlite.md`](https://github.com/usareur-af/goatcore/blob/main/docs/tutorials/00-goatlite.md));
+or another goatnet you have access to. Landing a `release/` write, and seeing a partner receive it,
 additionally needs an operator on that goatnet to add the two grants below. The
 docs and runbooks read without one.
 
@@ -143,7 +145,7 @@ pretending otherwise:
   you run these demos as an ordinary identity, your publish into a release lane
   is **denied** — so the drivers show you the key *shape*, the marker, the
   discovery surface, and the two grants involved, and they **do not claim your
-  publish landed**. How to verify enforcement on your goatnet is below.
+  publish landed**. How to verify enforcement on the goatnet you are using is below.
 - **The ACL does not reload live.** A newly-added release-writer or
   partner-read grant takes effect only when the router next **restarts**.
   Sharing is deliberate and deploy-gated, not an instant runtime toggle.
