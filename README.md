@@ -1,4 +1,9 @@
-# hello-galaxy: partner data sharing
+# hello-galaxy-partner-data-sharing
+
+<picture>
+  <source media="(prefers-color-scheme: dark)" srcset="docs/figures/release-lanes-dark.svg">
+  <img src="docs/figures/release-lanes-light.svg" width="760" alt="A producer's own root <uuid>/** stays private. To share, the producer publishes a copy into a release lane: release/<bilateral-set>/<topic> is read by exactly one partner (rel them), release/coalition/<topic> by every partner in the set (rel all). Writing needs the release-writer grant and reading needs the partner read grant. A partner that tries to read the producer's root is denied and receives nothing. The partner was given a certificate and reachability to the router, no account and no enclave.">
+</picture>
 
 **How to share data with a partner so they see ONLY what you released to them —
 and how to address a topic as "rel them" (one partner) vs "rel all" (a whole
